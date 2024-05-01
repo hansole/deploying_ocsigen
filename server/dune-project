@@ -1,0 +1,42 @@
+(lang dune 3.14)
+
+(name ocsigen_semi_static_server)
+
+(generate_opam_files true)
+
+(source
+ (github username/reponame))
+
+(authors "Author Name")
+
+(maintainers "Maintainer Name")
+
+(license MIT/LGPL)
+
+(documentation https://url/to/documentation)
+
+(package
+ (name ocsigen_semi_static_server)
+ (synopsis "A short synopsis")
+ (description "A longer description")
+ (depends ocaml dune
+  str
+  yojson
+  lwt_ppx
+  js_of_ocaml-ppx_deriving_json
+  ppx_deriving
+  pgocaml
+  ocsigen-ppx-rpc
+  ocsigenserver
+  ocsipersist-pgsql
+  ocsigenserver
+  eliom
+  safepass
+  resource-pooling
+  ocsigen-toolkit
+  ocsigen-start
+ )
+ (tags
+  (topics "to describe" your project)))
+
+; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project

@@ -1,0 +1,26 @@
+(executable
+ (public_name ocsigen_semi_static_server)
+ (name ocsigen_semi_static_server)
+ (flags -linkall)
+ (libraries
+  str
+  yojson
+  lwt_ppx
+  js_of_ocaml-ppx_deriving_json
+  ppx_deriving.std
+  pgocaml
+  ocsigen-ppx-rpc
+  libovsdb
+  ocsigenserver.ext.accesscontrol
+  ocsigenserver.ext.cors
+  ocsigenserver.ext.staticmod
+  ocsipersist.pgsql
+  ocsigenserver
+  eliom.server
+  safepass
+  resource-pooling
+  ocsigen-toolkit
+  ocsigen-start
+;  ocsigen-toolkit.server
+;  ocsigen-start.server
+ ))
